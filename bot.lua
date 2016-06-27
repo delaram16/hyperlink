@@ -5,48 +5,43 @@ URL = require('socket.url')
 JSON = require('dkjson')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = ""
+local bot_api_key = "233072224:AAFus_WXBgeaEJ4NrePBpy0WXjBpmg6ZHhs"
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
-local start = [[HI
-`/bold text`
-return *bold* text
+local start = [[😉 سلام 😉
+==========================
+/bold text
+📜 برای پر رنگ کردن متن 📜
+/italic text
+📜 کج کردن متن 📜
 
-`/italic text`
-return _italic_ text
+/link url text
+ساخت متن لینک دار 📜
 
-`/link url text`
-markdown link
-
-`/code text`
-return `code` text
-
+/code text
+📜 برای رنگی کردن متن (در نسخه کامپیوتر) 📜
 
 *-channel*
-*add bot to a channel then use this commands*
+📜برای ادد کردن کانال خود در ربات دستور بالا را وارد کنید 📜
 
-`/boldch @channelusername text`
-send *bold* text to a channel
+/boldch  (متن مورد نظر) (ایدی کانال شما)
+📜 ارسال متن پر رنگ به کانال شما 📜
 
-`/italicch @channelusername text`
-send _italic_ text to a channel
+/italicch  (متن مورد نظر) (ایدی کانال شما)
+📜 ارسال متن کج به کانال شما 📜
 
-`/linkch @channelusername url text`
-send markdown link to a channel
+/linkch (متن مورد نظر) (ایدی کانال شما)
+📜 ارسال متن لینک دار به کانال شما 📜
 
-`/codech @channelusername text`
-send `code` text to a channel
+/codech (متن مورد نظر) (ایدی کانال شما)
+📜 ارسال متن رنگی به کانال شما 📜
 
-
-*-other*
-
-*sticker to photo* 
-_just send a sticker_
-
-*photo to sticker*
-_just send a photo_
-
-[Source](https://github.com/pAyDaAr/lua-api-bot) ;-)
+😊 تبدیل استیکر به عکس 😊
+❤️کافیه استیکر رو بفرستی تا تبدیلش کنم ❤️
+😊 تبدیل عکس به استیکر 😊
+❤️کافیه عکس رو بفرستی تا تبدیلش کنم ❤️
+==========================
+ایدی ادمین ربات : @Delaram_Queen_TM
 ]] 
 
 -------
@@ -205,7 +200,7 @@ function bot_run()
 
 	bot = bot.result
 
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nbased on linux-file-manager :D\nthx to @imandaneshi\neditor: @unfriendly"
+	local bot_info = "ایدی شما = @"..bot.username.."\nنام شما = "..bot.first_name.."\nایدی عددی شما = "..bot.id
 
 	print(bot_info)
 
